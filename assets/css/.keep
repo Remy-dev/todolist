@@ -1,0 +1,4 @@
+# Ce fichier .keep pourrait s'appeler .meuh ou .nimportequoi, il aurait le même effet
+# son but est de permettre d'avoir un répertoire vide dans le dépôt git
+# car de base, Git ne versionne jamais un répertoire vide.
+# Ici, on souhaitait avoir directement l'arborescence dans assets avec 2 répertoires : css et js
