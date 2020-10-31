@@ -1,0 +1,3 @@
+TASKS: _title, completion, status
+PEUT AVOIR, 1N> TASKS, 11> CATEGORIES
+CATEGORIES: _name, status
