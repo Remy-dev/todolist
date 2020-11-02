@@ -3,9 +3,10 @@
 // On débute ici la déclaration de notre objet app
 let app = {
 
-    apiBaseUrl: 'http://localhost:8080/',
+    apiBaseUrl: 'http://127.0.0.1:8000/',
     categories: [],
     displayArchive: false,
+
 
     /**
      * Méthode qui déclenche tout notre programme

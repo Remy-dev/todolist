@@ -11,14 +11,14 @@ let category = {
         let request = fetch(app.apiBaseUrl + 'categories', fetchOptions)
 
         return request.then(
-            function(response) {
-                return response.json()
-            }
-        ).then(
             function (response) {
-                handler.fetchedCategories(response);
+                console.log(response);
+                return response.json();
+            }).then(
+                function (response) {
+                    handler.fetchedCategories(response);
             }
-        )
+        );
     },
 
     /**
@@ -34,12 +34,12 @@ let category = {
 
         for (const category of categories) {
             // maintenant, on va pouvoir y remettre toutes les catégories récupérées par l'ajax
-            if (category.status === 1) {
+
                 let option = document.createElement('option');
                 option.value = category.id;
                 option.label = category.name;
                 selectElt.appendChild(option);
-            }
+
         }
     }
 }

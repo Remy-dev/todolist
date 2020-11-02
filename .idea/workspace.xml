@@ -10,7 +10,63 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ac359281-da6d-4d13-8101-cb4654e5742b" name="Default Changelist" comment="" />
+    <list default="true" id="ac359281-da6d-4d13-8101-cb4654e5742b" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/category.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/category.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/task.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/task.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/.env.example" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/back/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/.styleci.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/app/Console/Commands/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/app/Console/Kernel.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/app/Events/Event.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/app/Events/ExampleEvent.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/app/Exceptions/Handler.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/app/Http/Controllers/CategoryController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/app/Http/Controllers/Controller.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/app/Http/Controllers/ExampleController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/app/Http/Controllers/MainController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/app/Http/Middleware/Authenticate.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/app/Http/Middleware/Cors.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/app/Http/Middleware/ExampleMiddleware.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/app/Jobs/ExampleJob.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/app/Jobs/Job.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/app/Listeners/ExampleListener.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/app/Models/.keep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/app/Providers/AppServiceProvider.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/app/Providers/AuthServiceProvider.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/app/Providers/EventServiceProvider.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/app/User.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/artisan" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/bootstrap/app.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/back/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/back/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/database/factories/ModelFactory.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/database/migrations/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/database/seeds/DatabaseSeeder.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/docs/TodoList/TodoList.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/docs/TodoList/TodoList.mcd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/docs/TodoList/TodoList.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/docs/TodoList/TodoList_geo.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/docs/TodoList/TodoList_svg.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/docs/todolist.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/import-external-repo.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/install.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/phpunit.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/public/.htaccess" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/public/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/back/public/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/resources/views/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/routes/web.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/storage/app/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/storage/framework/cache/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/storage/framework/cache/data/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/storage/framework/views/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/storage/logs/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/tests/ExampleTest.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/tests/TestCase.php" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -28,10 +84,12 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../apotheose/projet-produits-regionaux" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -42,7 +100,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1604157433402</updated>
-      <workItem from="1604157434443" duration="3202000" />
+      <workItem from="1604157434443" duration="8283000" />
     </task>
     <servers />
   </component>
@@ -65,5 +123,13 @@
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
     <state x="532" y="545" width="559" height="403" key="#com.intellij.fileTypes.FileTypeChooser/0.1440.2560.1440/0.0.2560.1440@0.0.2560.1440" timestamp="1604163614013" />
+    <state x="684" y="466" width="424" height="491" key="FileChooserDialogImpl" timestamp="1604168154578">
+      <screen x="0" y="0" width="2560" height="1440" />
+    </state>
+    <state x="684" y="466" width="424" height="491" key="FileChooserDialogImpl/0.1440.2560.1440/0.0.2560.1440@0.0.2560.1440" timestamp="1604168154578" />
+    <state x="361" y="343" width="1022" height="737" key="SettingsEditor" timestamp="1604166885107">
+      <screen x="0" y="0" width="2560" height="1440" />
+    </state>
+    <state x="361" y="343" width="1022" height="737" key="SettingsEditor/0.1440.2560.1440/0.0.2560.1440@0.0.2560.1440" timestamp="1604166885107" />
   </component>
 </project>

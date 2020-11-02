@@ -150,7 +150,7 @@ let task = {
 
         newTask.querySelector('.task__name > input').setAttribute('value', title);
         newTask.querySelector('.task__name > p').textContent = title;
-        newTask.querySelector('.task__category > p').textContent = categoryDatas.name;
+        newTask.querySelector('.task__category > p').textContent = title;
 
         task.setProgressBar(newTask, completion);
 

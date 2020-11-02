@@ -221,7 +221,7 @@ let handler = {
      */
     fetchedCategories: function (categories) {
 
-        let categoriesSelects = document.querySelectorAll('.task--add select, .filters__task--category > select');
+        let categoriesSelects = document.querySelectorAll('.task select, .filters__task--category > select');
 
         for (const select of categoriesSelects) {
             while (select.firstChild) {
