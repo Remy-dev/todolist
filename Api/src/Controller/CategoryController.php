@@ -12,7 +12,7 @@ use Symfony\Component\Routing\Annotation\Route;
 class CategoryController extends AbstractController
 {
     /**
-     * @Route("/categories", name="category_list")
+     * @Route("/api/categories", name="api_category_list")
      */
     public function index(CategoryRepository $categoryRepository, Request $request): Response
     {
@@ -21,11 +21,9 @@ class CategoryController extends AbstractController
         return $this->json(
             $list,
             200,
-            [
-                'Access-Control-Allow-Origin' => '*',
-                'Access-Control-Allow-Methods' => 'GET, POST, PUT, PATCH, DELETE, OPTIONS',
-                'Access-Control-Allow-Headers' => 'Content-Type'
-            ]
+            [],
+            ["groups" => ["category:list"]]
+
         );
     }
 }
