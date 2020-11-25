@@ -68,4 +68,47 @@ class TaskController extends AbstractController
         );
 
     }
+    /**
+     * @Route("/api/tasks/update/{id}", name="task_update")
+     */
+    public function updateTask(Task $task, Request $request, CategoryRepository $categoryRepository)
+    {
+        if ($request->getMethod() === 'PUT')
+        {
+            $datas = json_decode($request->getContent(), true);
+            $task->hydrate($datas);
+            $entityManager = $this->getDoctrine()->getManager();
+            $entityManager->persist($task);
+            $entityManager->flush();
+
+            $this->addFlash(
+                'success',
+                'La tâche a bien été mise à jour'
+            );
+
+            return new Response('', Response::HTTP_NO_CONTENT);
+        }
+        return new Response('', Response::HTTP_NOT_FOUND);
+    }
+
+    /**
+     * @Route("/api/tasks/delete/{id}", name="task_delete")
+     */
+    public function deleteTask(Task $task, Request $request)
+    {
+        if ($request->getMethod() === 'DELETE')
+        {
+            $entityManager = $this->getDoctrine()->getManager();
+            $entityManager->remove($task);
+            $entityManager->flush();
+
+            $this->addFlash(
+                'success',
+                'La tâche a bien été supprimée'
+            );
+
+            return new Response('', Response::HTTP_NO_CONTENT);
+        }
+        return new Response('', Response::HTTP_NOT_FOUND);
+    }
 }

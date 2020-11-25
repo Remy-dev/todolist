@@ -122,7 +122,7 @@ let handler = {
             return;
         }
 
-        const taskData = {
+        let taskData = {
             title,
             category,
             categoryId
@@ -217,22 +217,22 @@ let handler = {
 
     /**
      * 
-     * @param {json} categories 
+     * @param {json} datas
      */
-    fetchedCategories: function (categories) {
+    fetchedCategories: function (datas) {
 
         let categoriesSelects = document.querySelectorAll('.task select, .filters__task--category > select');
-
+        app.categories = datas;
         for (const select of categoriesSelects) {
             while (select.firstChild) {
                 select.removeChild(select.firstChild)
             }
 
             // On remplit (popule) le select avec de nouvelles options
-            category.createCategoryOptions(select, categories);
+            category.createCategoryOptions(select, datas);
         }
 
-        app.setCategories(categories);
+        app.setCategories(datas);
     },
 
     fetchedTasks: function (tasks) {
@@ -242,6 +242,7 @@ let handler = {
         tasksList.innerHTML = '';
 
         for (const taskApi of tasks) {
+            console.log(taskApi);
             let apiTask = task.displayTask(taskApi);
             tasksList.prepend(apiTask);
         }

@@ -17,11 +17,12 @@ let app = {
     init: function () {
 
         console.log('Ready player one')
-    
+
         category.fetchAll();
         task.fetchAll();
         app.bindEventTaskForm();
         app.bindEventMenu();
+
     },
 
     /**

@@ -2,6 +2,7 @@
 
 namespace App\Controller;
 
+use App\Entity\Category;
 use App\Repository\CategoryRepository;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\JsonResponse;
@@ -24,6 +25,19 @@ class CategoryController extends AbstractController
             [],
             ["groups" => ["category:list"]]
 
+        );
+    }
+
+    /**
+     * @Route("/api/category/{id}", name="app_item_category")
+     */
+    public function unique(Category $category): Response
+    {
+        return $this->json(
+            $category,
+            200,
+            [],
+            ["groups" => ["category:item"]]
         );
     }
 }

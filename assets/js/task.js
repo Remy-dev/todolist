@@ -11,7 +11,7 @@ let task = {
             cache: 'no-cache'
         };
 
-        let request = fetch(app.apiBaseUrl + 'tasks', fetchOptions)
+        let request = fetch(app.apiBaseUrl + 'api/tasks', fetchOptions)
 
         request.then(
             function (response) {
@@ -62,8 +62,8 @@ let task = {
             headers: myHeaders,
             body: JSON.stringify(taskData),
         };
-
-        fetch(app.apiBaseUrl + 'tasks', fetchOptions).then(
+        console.log(fetchOptions.body);
+        fetch(app.apiBaseUrl + 'api/tasks/create', fetchOptions).then(
 
             function (response) {
                 if (response.status == 201) {
@@ -83,19 +83,18 @@ let task = {
         // afin de spécifier que les données sont en JSON
         let myHeaders = new Headers();
         myHeaders.append("Content-Type", "application/json");
-
         let fetchOptions = {
-            method: 'PATCH',
+            method: 'PUT',
             mode: 'cors',
             cache: 'no-cache',
             headers: myHeaders,
             body: JSON.stringify(taskData),
         };
 
-        fetch(app.apiBaseUrl + 'tasks/' + taskData.id, fetchOptions).then(
+        fetch(app.apiBaseUrl + 'api/tasks/update/' + taskData.id, fetchOptions).then(
 
             function (response) {
-                if (response.status == 204) {
+                if (response.status === 204) {
                     console.log('modification effectuée');
                     task.fetchAll();
                 }
@@ -113,7 +112,7 @@ let task = {
             cache: 'no-cache'
         };
 
-        fetch(app.apiBaseUrl + 'tasks/' + taskId.id, fetchOptions).then(
+        fetch(app.apiBaseUrl + 'api/tasks/delete/' + taskId.id, fetchOptions).then(
 
             function (response) {
                 if (response.status == 204) {
@@ -132,13 +131,12 @@ let task = {
      * @param {*} taskData 
      */
     displayTask: function (taskData) {
-
         let id = taskData.id;
         let title = taskData.title;
         let categoryId = taskData.category_id;
         let completion = taskData.completion;
         let status = taskData.status;
-        let categoryDatas = taskData.category
+        let categoryName = taskData.category.name;
 
         let template = document.querySelector('#empty-task');
         let newTask = template.content.cloneNode(true);
@@ -150,7 +148,7 @@ let task = {
 
         newTask.querySelector('.task__name > input').setAttribute('value', title);
         newTask.querySelector('.task__name > p').textContent = title;
-        newTask.querySelector('.task__category > p').textContent = title;
+        newTask.querySelector('.task__category > p').textContent = categoryName;
 
         task.setProgressBar(newTask, completion);
 

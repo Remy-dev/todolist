@@ -3,6 +3,7 @@
 namespace App\Entity;
 
 use App\Repository\TaskRepository;
+use App\Traits\Hydrator;
 use Doctrine\ORM\Mapping as ORM;
 use Symfony\Component\Serializer\Annotation\Groups;
 
@@ -11,6 +12,7 @@ use Symfony\Component\Serializer\Annotation\Groups;
  */
 class Task
 {
+    use Hydrator;
     /**
      * @ORM\Id
      * @ORM\GeneratedValue
@@ -42,6 +44,11 @@ class Task
      * @Groups ("task:read")
      */
     private $category;
+
+    public function __construct($datas = [])
+    {
+        $this->hydrate($datas);
+    }
 
     public function getId(): ?int
     {

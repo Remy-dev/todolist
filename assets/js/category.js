@@ -8,15 +8,15 @@ let category = {
             cache: 'no-cache'
         };
 
-        let request = fetch(app.apiBaseUrl + 'categories', fetchOptions)
+        let request = fetch(app.apiBaseUrl + 'api/categories', fetchOptions)
 
         return request.then(
             function (response) {
                 console.log(response);
                 return response.json();
             }).then(
-                function (response) {
-                    handler.fetchedCategories(response);
+                function (datas) {
+                    handler.fetchedCategories(datas);
             }
         );
     },
